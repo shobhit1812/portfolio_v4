@@ -22,10 +22,7 @@ const Header = ({ value }) => {
             isMenuOpen ? "flex" : "hidden"
           } absolute top-16 left-0 right-0 bg-white md:bg-transparent p-5 md:p-0 md:relative md:top-0 md:left-0 md:right-auto md:w-auto md:h-auto w-full h-screen items-center justify-center`}
         >
-          <button
-            className="px-2 py-1 font-medium border rounded-full"
-            onClick={value}
-          >
+          <button className="px-2 py-1 text-xl" onClick={value}>
             <CgDarkMode />
           </button>
           <li className="px-2 py-1 font-medium transition duration-300 ease-in-out hover:underline">
