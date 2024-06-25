@@ -4,6 +4,7 @@ import About from "./components/About";
 import Blog from "./components/Blog";
 import Wallpaper from "./components/Wallpaper";
 import Project from "./components/Project";
+import ErrorPage from "./components/ErrorPage";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 
 const App = () => {
@@ -28,6 +29,7 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
