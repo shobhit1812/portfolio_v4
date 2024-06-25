@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { CgDarkMode } from "react-icons/cg";
 import { CgMenuMotion } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 const Header = ({ value }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,9 +9,9 @@ const Header = ({ value }) => {
   return (
     <header className="shadow p-5 font-poppins">
       <div className="flex justify-between items-center mx-auto max-w-screen-xl px-6 md:px-16 lg:px-36">
-        <a href="/" className="font-extrabold text-lg">
+        <Link href="/" className="font-extrabold text-lg">
           Shobhit Nautiyal
-        </a>
+        </Link>
         <button
           className="text-lg md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -26,13 +27,13 @@ const Header = ({ value }) => {
             <CgDarkMode />
           </button>
           <li className="px-2 py-1 font-medium transition duration-300 ease-in-out hover:underline">
-            <a href="#blog">blog</a>
+            <Link to="/blog">blog</Link>
           </li>
           <li className="px-2 py-1 font-medium transition duration-300 ease-in-out hover:underline">
-            <a href="#wallpaper">wallpaper</a>
+            <Link to="/wallpaper">wallpaper</Link>
           </li>
           <li className="px-2 py-1 font-medium transition duration-300 ease-in-out hover:underline">
-            <a href="#project">project</a>
+            <Link to="/project">project</Link>
           </li>
         </ul>
       </div>
