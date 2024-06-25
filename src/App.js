@@ -1,5 +1,10 @@
 import { useState } from "react";
 import Header from "./components/Header";
+import About from "./components/About";
+import Blog from "./components/Blog";
+import Wallpaper from "./components/Wallpaper";
+import Project from "./components/Project";
+import { createBrowserRouter, Outlet } from "react-router-dom";
 
 const App = () => {
   const [isDark, setIsDark] = useState(false);
@@ -14,8 +19,34 @@ const App = () => {
       }`}
     >
       <Header value={toggleTheme} />
+      <Outlet />
     </div>
   );
 };
 
-export default App;
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <About />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/project",
+        element: <Project />,
+      },
+      {
+        path: "/wallpaper",
+        element: <Wallpaper />,
+      },
+    ],
+  },
+]);
+
+export default appRouter;
