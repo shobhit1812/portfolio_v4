@@ -1,15 +1,25 @@
 const About = () => {
+  const name = "Shobhit Nautiyal";
   return (
     <>
       <div className="p-5 font-poppins flex justify-between items-center mx-auto max-w-screen-xl px-6 md:px-16 lg:px-36">
         <div>
           <h1 className="m-1 p-1 text-8xl">Hi,</h1>
           <h1 className="m-1 p-1 text-8xl">
-            I'm <span className="font-extrabold">Shobhit Nautiyal</span>.
+            I'm{" "}
+            {name.split("").map((char, index) => (
+              <span
+                key={index}
+                className={`font-extrabold inline-block opacity-0 animate-typewriter`}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {char === " " ? "\u00A0" : char}
+              </span>
+            ))}
           </h1>
           <h1 className="m-1 p-1 text-6xl">
-            <span className="underline"> coding instructor</span> |{" "}
-            <span className="underline"> mentor</span>
+            <span className="underline">coding instructor</span> |{" "}
+            <span className="underline">mentor</span>
           </h1>
         </div>
       </div>
