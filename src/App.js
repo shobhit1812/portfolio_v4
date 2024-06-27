@@ -26,6 +26,7 @@ const App = () => {
       }`}
     >
       <Header
+        isDark={isDark}
         toggleTheme={toggleTheme}
         toggleMenu={toggleMenu}
         showMenu={showMenu}
