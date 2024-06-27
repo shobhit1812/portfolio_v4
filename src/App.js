@@ -9,18 +9,28 @@ import { createBrowserRouter, Outlet } from "react-router-dom";
 
 const App = () => {
   const [isDark, setIsDark] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const toggleTheme = () => {
     setIsDark((prevState) => !prevState);
   };
+
+  const toggleMenu = () => {
+    setShowMenu((prevState) => !prevState);
+  };
+
   return (
     <div
       className={`scroll-smooth ${
         isDark ? "bg-slate-800 text-slate-50" : "bg-slate-50 text-slate-800"
       }`}
     >
-      <Header value={toggleTheme} />
-      <Outlet />
+      <Header
+        toggleTheme={toggleTheme}
+        toggleMenu={toggleMenu}
+        showMenu={showMenu}
+      />
+      {!showMenu && <Outlet />}
     </div>
   );
 };
