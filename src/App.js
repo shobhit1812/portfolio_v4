@@ -24,7 +24,7 @@ const App = () => {
     <div
       className={`scroll-smooth ${
         isDark ? "bg-slate-800 text-slate-50" : "bg-slate-50 text-slate-800"
-      }`}
+      } flex flex-col min-h-screen`}
     >
       <Header
         isDark={isDark}
@@ -32,7 +32,7 @@ const App = () => {
         toggleMenu={toggleMenu}
         showMenu={showMenu}
       />
-      {!showMenu && <Outlet />}
+      {<main className="flex-grow">{!showMenu && <Outlet />}</main>}
       <Footer />
     </div>
   );
