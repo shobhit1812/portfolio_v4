@@ -17,7 +17,7 @@ const Footer = () => {
             href="https://github.com/Shobhit1812"
             target="_blank"
             rel="noreferrer"
-            className="px-2 py-1"
+            className="px-2 py-1 hover:-translate-y-1 hover:scale-110 duration-300"
           >
             <FiGithub />
           </a>
@@ -25,7 +25,7 @@ const Footer = () => {
             href="mailto:shobhit.nautiyal99@gmail.com"
             target="_blank"
             rel="noreferrer"
-            className="px-2 py-1"
+            className="px-2 py-1 hover:-translate-y-1 hover:scale-110 duration-300"
           >
             <SiGmail />
           </a>
@@ -33,7 +33,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/shobhit-nautiyal-033b711ba/"
             target="_blank"
             rel="noreferrer"
-            className="px-2 py-1"
+            className="px-2 py-1 hover:-translate-y-1 hover:scale-110 duration-300"
           >
             <FaLinkedinIn />
           </a>
@@ -41,7 +41,7 @@ const Footer = () => {
             href="https://x.com/shobhitnautiya_"
             target="_blank"
             rel="noreferrer"
-            className="px-2 py-1"
+            className="px-2 py-1 hover:-translate-y-1 hover:scale-110 duration-300"
           >
             <FaXTwitter />
           </a>
@@ -49,7 +49,7 @@ const Footer = () => {
             href="https://instagram.com/imshobhitnautiyal"
             target="_blank"
             rel="noreferrer"
-            className="px-2 py-1"
+            className="px-2 py-1 hover:-translate-y-1 hover:scale-110 duration-300"
           >
             <FaInstagram />
           </a>
@@ -57,7 +57,7 @@ const Footer = () => {
             href="https://medium.com/@shobhit.nautiyal99"
             target="_blank"
             rel="noreferrer"
-            className="px-2 py-1"
+            className="px-2 py-1 hover:-translate-y-1 hover:scale-110 duration-300"
           >
             <FaMedium />
           </a>
