@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = ({ isDark, toggleTheme, toggleMenu, showMenu }) => {
   return (
-    <header className="shadow p-5 font-poppins">
+    <header className="shadow p-5 font-poppins sticky top-0 bg-slate-50 z-50">
       <div className="flex justify-between items-center mx-auto max-w-screen-xl px-6 md:px-16 lg:px-36">
         <Link to="/" className="font-extrabold text-lg">
           Shobhit Nautiyal
