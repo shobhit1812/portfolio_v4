@@ -5,6 +5,7 @@ import Blog from "./components/Blog";
 import Wallpaper from "./components/Wallpaper";
 import Project from "./components/Project";
 import ErrorPage from "./components/ErrorPage";
+import Footer from "./components/Footer";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
         showMenu={showMenu}
       />
       {!showMenu && <Outlet />}
+      <Footer />
     </div>
   );
 };
